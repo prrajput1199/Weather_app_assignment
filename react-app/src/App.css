@@ -1,0 +1,80 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff;
+}
+
+.weather-dashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.search-city {
+  margin-bottom: 20px;
+}
+
+.search-city input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.search-city button {
+  padding: 10px;
+}
+
+.weather-display {
+  margin-bottom: 20px;
+}
+
+.current-weather {
+  margin-bottom: 20px;
+}
+
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.forecast-item {
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-cities {
+  margin-top: 20px;
+}
+
+.favorite-cities ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.favorite-cities li {
+  padding: 10px;
+  background-color: #f0f8ff;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.favorite-cities button {
+  padding: 5px 10px;
+}

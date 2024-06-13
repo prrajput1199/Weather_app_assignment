@@ -10,18 +10,19 @@ const WeatherDashboard = () => {
   const [favorites, setFavorites] = useState([]);
   const [units, setUnits] = useState('metric');
 
+  const loadFavoriteCities = async () => {
+    const data = await fetchFavoriteCities();
+    setFavorites(data);
+  };
+
   useEffect(() => {
     const lastCity = localStorage.getItem('lastCity');
     if (lastCity) {
       handleSearch(lastCity);
     }
     loadFavoriteCities();
-  }, []);
+  },[]);
 
-  const loadFavoriteCities = async () => {
-    const data = await fetchFavoriteCities();
-    setFavorites(data);
-  };
 
   const handleSearch = async (city) => {
     const weatherData = await fetchWeatherData(city, units);

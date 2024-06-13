@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const SearchCity = ({ onSearch }) => {
-  const [city, setCity] = useState('');
+  const [city, setCity] = useState("");
 
   const handleSearch = () => {
     onSearch(city);

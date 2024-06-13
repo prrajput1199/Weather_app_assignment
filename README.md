@@ -40,19 +40,23 @@ Follow these instructions to set up and run the project locally.
    git clone https://github.com/your-username/weather-dashboard.git
    cd weather-dashboard
 2. Install the dependencies:
-
+   
+   ```bash
    npm install
 
-3. Create a .env file in the root directory and add your OpenWeatherMap API key:
+4. Create a .env file in the root directory and add your OpenWeatherMap API key:
 
+   ```bash
    REACT_APP_OPENWEATHERMAP_API_KEY=your_openweathermap_api_key
    
 Running the Application
 
 1) Start the JSON server:
 
+   ```bash
    json-server --watch db.json --port 5000
 
-2) Start the React application:
+1) Start the React application:
 
+   ```bash
    npm start

@@ -23,7 +23,7 @@ const WeatherDashboard = () => {
     loadFavoriteCities();
   },[]);
 
-
+  
   const handleSearch = async (city) => {
     const weatherData = await fetchWeatherData(city, units);
     const forecastData = await fetchForecastData(city, units);

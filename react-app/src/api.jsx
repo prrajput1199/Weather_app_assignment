@@ -1,4 +1,4 @@
-const API_KEY = '2e7de12bcd4fe06a0dfc166eba0706d1'; // Replace with your OpenWeatherMap API key
+const API_KEY = '7ae88760e877c5a1afcc0ed55c0770e9'; // Replace with your OpenWeatherMap API key
 const BASE_URL = 'http://api.openweathermap.org/data/2.5';
 
 export const fetchWeatherData = async (city, units = 'metric') => {
@@ -6,7 +6,7 @@ export const fetchWeatherData = async (city, units = 'metric') => {
   return await response.json();
 };
 
-export const fetchForecastData = async (city, units = 'metric') => {
+export const fetchForecastData = async (city, units) => {
   const response = await fetch(`${BASE_URL}/forecast?q=${city}&units=${units}&appid=${API_KEY}`);
   return await response.json();
 };
